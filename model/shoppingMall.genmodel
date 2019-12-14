@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/ShoppingMall/src-gen" creationIcons="false" editDirectory="/ShoppingMall.edit/src-gen"
+    editorDirectory="/ShoppingMall.editor/src-gen" modelPluginID="ShoppingMall" modelName="ShoppingMall"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>shoppingMall.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="ShoppingMall" disposableProviderFactory="true" ecorePackage="shoppingMall.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="shoppingMall.ecore#//StorageType">
+      <genEnumLiterals ecoreEnumLiteral="shoppingMall.ecore#//StorageType/Fridge"/>
+      <genEnumLiterals ecoreEnumLiteral="shoppingMall.ecore#//StorageType/Table"/>
+      <genEnumLiterals ecoreEnumLiteral="shoppingMall.ecore#//StorageType/Shelf"/>
+    </genEnums>
+    <genClasses ecoreClass="shoppingMall.ecore#//Mall">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Mall/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Mall/Location"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Mall/shops"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Mall/employees"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Mall/schedule"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Shop">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Shop/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Shop/Floor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Shop/Map"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Shop/Photos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Shop/employees"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Shop/schedule"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Shop/storages"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Specialistic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Specialistic/TypeOfGoods"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Branded">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Branded/NameofTheBrand"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Item">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Item/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Item/Brand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Item/Model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Item/Color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Item/Size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Item/Price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Item/Position"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Item/offer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Item/tag"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Offer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Offer/StartDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Offer/EndDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Offer/Discount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Offer/Photos"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Offer/Type"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Employee">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Employee/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Employee/WorkID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Employee/DateOfBirth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Employee/Designation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Employee/FiscalCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Employee/Shifts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Employee/schedule"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Tag">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Tag/Name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Tag/tags"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Schedule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Schedule/StartTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Schedule/EndTime"/>
+    </genClasses>
+    <genClasses ecoreClass="shoppingMall.ecore#//Storage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Storage/Type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Storage/Size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Storage/NoOfLayers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shoppingMall.ecore#//Storage/Position"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference shoppingMall.ecore#//Storage/items"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
