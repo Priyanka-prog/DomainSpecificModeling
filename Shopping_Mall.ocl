@@ -1,0 +1,60 @@
+import 'Shopping_Mall.ecore'
+
+package shoppingMall
+
+--MALL
+context Mall
+inv invariant_MallTiming :
+	self.Name->isEmpty()
+	
+
+--SHOPS
+
+--STORAGE
+
+--REFRIGERATOR
+
+--ITEMS
+
+--There is only one offer on an item
+--context Item 
+--inv invariant_countOffer :
+--	self.Item.offer -> forAll(count(self.Item.offer)isEmpty())
+--	
+	
+--OFFERS
+
+--Expiry date of the offer
+context Offer
+inv	invariant_offerDate : 
+	self.EndDate > self.StartDate
+	
+--Discount on an offer is always greater than 0
+context Offer
+inv invariant_discountValue:
+	self.Discount > 0
+	
+--Offer doesn't last after expiry time
+
+
+
+
+--EMPLOYESS
+
+-- No two Employess have the same WORKID
+
+context Employee
+
+inv invariant_noEmployeehasSameID : 
+	 Employee.allInstances() -> forAll(e1, e2 | e1 <> e2 implies e1.oclAsType(Employee).WorkID <> e2.oclAsType(Employee).WorkID)
+	 
+	
+--inv invariant_employeeSchedule :
+--	Integer(self.schedule.EndTime - self.schedule.StartTime) <= 10
+			
+
+			
+
+	
+	
+endpackage

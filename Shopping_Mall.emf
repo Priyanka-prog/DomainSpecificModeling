@@ -1,0 +1,85 @@
+@namespace(uri="http://www.example.org/shoppingMall", prefix="shoppingMall")
+package shoppingMall;
+
+import "http://www.eclipse.org/emf/2003/XMLType";
+
+class Mall {
+  attr String Name;
+  attr String Location;
+  ref Shop[+] shops;
+  ref Employee[+] employees;
+  ref Schedule[1] schedule;
+}
+
+abstract class Shop {
+  attr String Name;
+  attr int Floor;
+  attr String Map;
+  attr String Photos;
+  ref Employee[+] employees;
+  ref Schedule[1] schedule;
+  ref Storage[+] storages;
+}
+
+class Specialistic extends Shop {
+  attr String TypeOfGoods;
+}
+
+class Branded extends Shop {
+  attr String NameofTheBrand;
+}
+
+class Item {
+  attr String Name;
+  attr String Brand;
+  attr String Model;
+  attr String Color;
+  attr float Size;
+  attr float Price;
+  attr String Position;
+  ref Offer offer;
+  ref Tag[1] tag;
+}
+
+class Offer {
+  attr EDate StartDate;
+  attr EDate EndDate;
+  attr float Discount;
+  attr String Photos;
+  attr String Type;
+}
+
+class Employee {
+  attr String Name;
+  attr int WorkID;
+  !unique attr EDate DateOfBirth;
+  attr String Designation;
+  attr String FiscalCode;
+  !unique attr String Shifts;
+  ref Schedule[1] schedule;
+}
+
+class Tag {
+  attr String Name;
+  ref Tag[*] tags;
+}
+
+class Schedule {
+  attr type.Time StartTime;
+  attr type.Time EndTime;
+}
+
+class Storage {
+  attr StorageType Type;
+  attr int Size;
+  attr int NoOfLayers;
+  attr String Position;
+  ref Item[*] items;
+}
+
+enum StorageType {
+  Fridge = 0;
+  Table = 1;
+  Shelf = 2;
+}
+
