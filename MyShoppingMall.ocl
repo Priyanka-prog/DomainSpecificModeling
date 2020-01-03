@@ -1,0 +1,50 @@
+import 'myShoppingMall.ecore'
+
+package myShoppingMall
+
+--MALL
+context Mall
+inv MallisDefined: self.Name -> notEmpty()
+
+
+--SHOPS
+context Shops
+inv shopisDefined: self.ShopName -> notEmpty()
+inv StoragePerShop: self.storages -> notEmpty()
+inv StorageTypes: self.storages->forAll(v | v.Type = Table or v.Type = Fridge or v.Type = Shelves)
+
+--BRANDED
+context Branded
+inv itemsareofoneBrand: Branded.allInstances() -> forAll(brands | brands.items.oclAsType(Item).BName = self.BName)
+
+--STORAGE
+context Storage
+inv LayerNumber: self.NumberOfLayers >= 2 implies (self.Type = Shelves)
+inv tableLayerNumber: self.NumberOfLayers = 1 implies (self.Type = Table)
+
+
+--SCHEDULE 
+context Schedule
+inv timeSchedule: self.StartTime -> notEmpty()
+inv endtimeSchedule: self.EndTime -> notEmpty()
+inv endtimegreaterthanstart: self.EndTime > self.StartTime
+
+--CATEGORIES
+
+--ITEMS
+context Item
+inv itemPosition: Item.allInstances() -> forAll(i1, i2 | i1 <> i2 implies i1.oclAsType(Item).Position <> i2.oclAsType(Item).Position)
+inv itemCategory: Item.allInstances() -> forAll(item1 | item1.oclAsType(Item).categories-> notEmpty())
+	
+--OFFERS
+context Offer
+inv discountValue: self.Discount > 0
+inv dateValidity: self.EndDate > self.StartDate
+
+
+--EMPLOYESS
+context Employee
+inv employeeID: Employee.allInstances() -> forAll(e1, e2 | e1 <> e2 implies e1.oclAsType(Employee).ID <> e2.oclAsType(Employee).ID)
+		
+
+endpackage	

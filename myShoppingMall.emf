@@ -1,0 +1,90 @@
+@namespace(uri="http://www.myshoppingmall.com/1.0", prefix="MSM")
+package myShoppingMall;
+
+class Mall {
+  op boolean IsOpen();
+  attr String Name;
+  attr String Location;
+  val Shops[+] contains;
+  val Employee[+] employees;
+  val Schedule schedule;
+}
+
+class Shops {
+  op boolean IsShopOpen();
+  attr String ShopName;
+  attr int Floor;
+  attr String Address;
+  attr String Photos;
+  val Employee[+] employees;
+  ref Schedule[1] schedule;
+  val Storage[+] storages;
+}
+
+class Storage {
+  attr StorageType Type;
+  attr int NumberOfLayers;
+  attr int Size;
+  attr String Position;
+  ref Item[+] Items;
+}
+
+enum StorageType {
+  Table = 0;
+  Fridge = 0;
+  Shelves = 0;
+}
+
+class Item {
+  attr String ItemName;
+  attr String BName;
+  attr String Color;
+  attr String Model;
+  attr int Size;
+  attr String Position;
+  attr float Price;
+  ref Offer offers;
+  ref Category[1] categories;
+}
+
+class Offer {
+  attr EDate StartDate;
+  attr EDate EndDate;
+  attr String Discount;
+  attr String Photos;
+  attr String Type;
+  attr boolean IsValid;
+}
+
+class Category {
+  attr String CategoryName;
+  val SubCategory[*] contains;
+}
+
+class SubCategory {
+  attr String SubCategoryName;
+}
+
+class Schedule {
+  attr EDate StartTime;
+  attr EDate EndTime;
+}
+
+class Employee {
+  attr String EmployeeName;
+  attr int ID;
+  attr EDate DateOfBirth;
+  attr String Designation;
+  attr String FiscalCode;
+  attr String Shifts;
+  ref Schedule[1] schedule;
+}
+
+class Branded extends Shops {
+  attr String BName;
+}
+
+class Specialistic extends Shops {
+  attr String Type;
+}
+
