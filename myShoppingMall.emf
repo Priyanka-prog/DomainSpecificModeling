@@ -1,32 +1,42 @@
 @namespace(uri="http://www.myshoppingmall.com/1.0", prefix="MSM")
 package myShoppingMall;
 
+@gmf.diagram(model.extension="mm", diagram.extension="mmd")
+
 class Mall {
   op boolean IsOpen();
   attr String Name;
   attr String Location;
   val Shops[+] contains;
   val Employee[+] employees;
-  val Schedule schedule;
+  val Schedule[1] schedule;
 }
 
+@gmf.node(label="ShopName", figure="rectangle")
 class Shops {
   op boolean IsShopOpen();
   attr String ShopName;
   attr int Floor;
   attr String Address;
   attr String Photos;
+
+  @gmf.compartment(collapsible="true")
+  
   val Employee[+] employees;
-  ref Schedule[1] schedule;
   val Storage[+] storages;
+  val Schedule[1] schedule;
 }
 
+@gmf.node(label="Position", figure="rectangle")
 class Storage {
   attr StorageType Type;
   attr int NumberOfLayers;
   attr int Size;
   attr String Position;
-  ref Item[+] Items;
+  
+  @gmf.compartment(collapsible="true")
+  
+  val Item[*] items;
 }
 
 enum StorageType {
@@ -35,6 +45,7 @@ enum StorageType {
   Shelves = 0;
 }
 
+@gmf.node(label="ItemName", figure="ellipse")
 class Item {
   attr String ItemName;
   attr String BName;
@@ -43,10 +54,14 @@ class Item {
   attr int Size;
   attr String Position;
   attr float Price;
-  ref Offer offers;
-  ref Category[1] categories;
+  
+  @gmf.compartment(collapsible="true")
+  
+  val Category[1] items;
+  val Offer offer;
 }
 
+@gmf.node(label="Discount", figure="ellipse")
 class Offer {
   attr EDate StartDate;
   attr EDate EndDate;
@@ -56,11 +71,16 @@ class Offer {
   attr boolean IsValid;
 }
 
+@gmf.node(label="CategoryName", figure="rectangle")
 class Category {
   attr String CategoryName;
+  
+  @gmf.compartment(collapsible="true")
+  
   val SubCategory[*] contains;
 }
 
+@gmf.node(label="SubCategoryName", figure="ellipse")
 class SubCategory {
   attr String SubCategoryName;
 }
@@ -70,6 +90,7 @@ class Schedule {
   attr EDate EndTime;
 }
 
+@gmf.node(label="EmployeeName", figure="ellipse")
 class Employee {
   attr String EmployeeName;
   attr int ID;
@@ -77,13 +98,16 @@ class Employee {
   attr String Designation;
   attr String FiscalCode;
   attr String Shifts;
-  ref Schedule[1] schedule;
+  val Schedule[1] schedule;
 }
 
+@gmf.node(label="BName", figure="ellipse")
 class Branded extends Shops {
+	
   attr String BName;
 }
 
+@gmf.node(label="Type", figure="ellipse")
 class Specialistic extends Shops {
   attr String Type;
 }

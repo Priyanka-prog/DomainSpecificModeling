@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/myShoppingMall/src" modelPluginID="myShoppingMall"
     modelName="MyShoppingMall" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
     copyrightFields="false">
-  <foreignModel>myShoppingMall.ecore</foreignModel>
+  <foreignModel>myShoppingMall.emf</foreignModel>
   <genPackages prefix="MyShoppingMall" disposableProviderFactory="true" ecorePackage="myShoppingMall.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="myShoppingMall.ecore#//StorageType">
       <genEnumLiterals ecoreEnumLiteral="myShoppingMall.ecore#//StorageType/Table"/>
@@ -15,18 +15,17 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Mall/Location"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Mall/contains"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Mall/employees"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Mall/schedule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Mall/schedule"/>
       <genOperations ecoreOperation="myShoppingMall.ecore#//Mall/IsOpen"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="myShoppingMall.ecore#//Shops">
+    <genClasses ecoreClass="myShoppingMall.ecore#//Shops">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Shops/ShopName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Shops/Floor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Shops/Address"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Shops/Photos"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Shops/employees"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Shops/schedule"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Shops/storages"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Shops/items"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Shops/storages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Shops/schedule"/>
       <genOperations ecoreOperation="myShoppingMall.ecore#//Shops/IsShopOpen"/>
     </genClasses>
     <genClasses ecoreClass="myShoppingMall.ecore#//Storage">
@@ -34,7 +33,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Storage/NumberOfLayers"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Storage/Size"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Storage/Position"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Storage/Items"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Storage/items"/>
     </genClasses>
     <genClasses ecoreClass="myShoppingMall.ecore#//Item">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Item/ItemName"/>
@@ -43,9 +42,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Item/Model"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Item/Size"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Item/Position"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Item/offers"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Item/categories"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Item/Price"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Item/items"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Item/offer"/>
     </genClasses>
     <genClasses ecoreClass="myShoppingMall.ecore#//Offer">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Offer/StartDate"/>
@@ -73,7 +72,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Employee/Designation"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Employee/FiscalCode"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Employee/Shifts"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Employee/schedule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myShoppingMall.ecore#//Employee/schedule"/>
     </genClasses>
     <genClasses ecoreClass="myShoppingMall.ecore#//Branded">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myShoppingMall.ecore#//Branded/BName"/>
