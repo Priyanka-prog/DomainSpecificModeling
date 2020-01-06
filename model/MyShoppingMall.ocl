@@ -1,0 +1,71 @@
+import 'myShoppingMall.ecore'
+
+package myShoppingMall
+
+--MALL
+--Mall is defined
+--Shop Timings are in accordance with Mall Timings
+context Mall
+inv MallisDefined: self.Name -> notEmpty()
+inv shoptimings: self.contains -> forAll(shops | shops.schedule.StartTime >= self.schedule.StartTime and shops.schedule.EndTime < self.schedule.EndTime)
+
+
+--SHOPS
+--ShopName is not Empty
+--Storages in each ship is not empty
+--Storage Type in shop is either of them
+--Employees are not Empty
+--Check on employee and shop timings
+context Shops
+inv shopisDefined: self.ShopName -> notEmpty()
+inv StoragePerShop: self.storages -> notEmpty()
+inv StorageTypes: self.storages->forAll(v | v.Type = 0 or v.Type = 1 or v.Type = 2)
+inv employeenotEmpty: self.employees -> notEmpty()
+
+--BRANDED
+--Branded shops only have items of that same brand
+context Branded
+inv itemsareofoneBrand: Branded.allInstances() -> forAll(brands | brands.items.oclAsType(Item).BName = self.BName)
+
+--STORAGE
+--Number of Layers in a shelve is more than 2
+--Number of Layers in a table is 1
+context Storage
+inv LayerNumber: self.NumberOfLayers >= 2 implies (self.Type = 2)
+inv tableLayerNumber: self.NumberOfLayers = 1 implies (self.Type = 1)
+
+
+--SCHEDULE 
+--Start and End Time are never empty
+--EndTime is greater than the start time
+context Schedule
+inv timeSchedule: self.StartTime -> notEmpty()
+inv endtimeSchedule: self.EndTime -> notEmpty()
+inv endtimegreaterthanstart: self.EndTime > self.StartTime
+
+--CATEGORIES
+
+--ITEMS
+--All items are in different position
+--All items belong to a category
+--An item only has one offer
+context Item
+inv itemPosition: Item.allInstances() -> forAll(i1, i2 | i1 <> i2 implies i1.oclAsType(Item).Position <> i2.oclAsType(Item).Position)
+inv itemCategory: Item.allInstances() -> forAll(item1 | item1.oclAsType(Item).categories-> notEmpty())
+inv offerOnItem: self.offers->size() = 1
+inv itemPrice: self.Price > 0
+	
+--OFFERS
+--Discount Value is greater than 5
+--Discount date validity check
+context Offer
+inv discountValue: self.Discount > 5
+inv dateValidity: self.EndDate > self.StartDate
+
+
+--EMPLOYESS
+context Employee
+inv employeeID: Employee.allInstances() -> forAll(e1, e2 | e1 <> e2 implies e1.oclAsType(Employee).ID <> e2.oclAsType(Employee).ID)
+inv employeeSchedule: self.schedule -> notEmpty()
+
+endpackage	
