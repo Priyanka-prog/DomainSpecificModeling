@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgen:GenEditorGenerator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel" diagramFileExtension="mmd" domainFileExtension="mm" copyrightText="">
+  <diagram visualID="1000" editPartClassName="MallEditPart" itemSemanticEditPolicyClassName="MallItemSemanticEditPolicy" canonicalEditPolicyClassName="MallCanonicalEditPolicy" iconProviderPriority="Low" validationProviderPriority="Low" validationEnabled="true" validationDecorators="true" liveValidationUIFeedback="true">
+    <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
+    <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="MallEditHelper"/>
+    <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
+    <containsShortcutsTo>mm</containsShortcutsTo>
+    <shortcutsProvidedFor>mm</shortcutsProvidedFor>
+    <domainDiagramElement href="myShoppingMall.genmodel#//myShoppingMall/Mall"/>
+    <childNodes visualID="3006" editPartClassName="Employee2EditPart" itemSemanticEditPolicyClassName="Employee2ItemSemanticEditPolicy" canonicalEditPolicyClassName="Employee2CanonicalEditPolicy" graphicalNodeEditPolicyClassName="Employee2GraphicalNodeEditPolicy" createCommandClassName="Employee2CreateCommand" containers="//@diagram/@compartments.0 //@diagram/@compartments.5 //@diagram/@compartments.7">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="EmployeeEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="EmployeeFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class EmployeeFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureEmployeeLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public EmployeeFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureEmployeeLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureEmployeeLabelFigure.setText(&quot;Employee&quot;);&#xA;&#xA;this.add(fFigureEmployeeLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureEmployeeLabelFigure() {&#xA;&#x9;&#x9;return fFigureEmployeeLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Employee"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Shops/employees"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Shops/employees"/>
+      </modelFacet>
+      <labels visualID="5013" editPartClassName="EmployeeEmployeeName2EditPart" itemSemanticEditPolicyClassName="EmployeeEmployeeName2ItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureEmployeeLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Employee/EmployeeName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3002" editPartClassName="StorageEditPart" itemSemanticEditPolicyClassName="StorageItemSemanticEditPolicy" canonicalEditPolicyClassName="StorageCanonicalEditPolicy" compartments="//@diagram/@compartments.2" graphicalNodeEditPolicyClassName="StorageGraphicalNodeEditPolicy" createCommandClassName="StorageCreateCommand" containers="//@diagram/@compartments.1 //@diagram/@compartments.6 //@diagram/@compartments.8">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="StorageEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="StorageFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class StorageFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureStorageLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fStorageItemsCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public StorageFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureStorageLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureStorageLabelFigure.setText(&quot;Storage&quot;);&#xA;fFigureStorageLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureStorageLabelFigure);&#xA;&#xA;&#xA;&#xA;fStorageItemsCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fStorageItemsCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fStorageItemsCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureStorageLabelFigure() {&#xA;&#x9;&#x9;return fFigureStorageLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getStorageItemsCompartmentFigure() {&#xA;&#x9;&#x9;return fStorageItemsCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Storage"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Shops/storages"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Shops/storages"/>
+      </modelFacet>
+      <labels visualID="5012" editPartClassName="StoragePositionEditPart" itemSemanticEditPolicyClassName="StoragePositionItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureStorageLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Storage/Position"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3003" editPartClassName="ItemEditPart" itemSemanticEditPolicyClassName="ItemItemSemanticEditPolicy" canonicalEditPolicyClassName="ItemCanonicalEditPolicy" compartments="//@diagram/@compartments.3" graphicalNodeEditPolicyClassName="ItemGraphicalNodeEditPolicy" createCommandClassName="ItemCreateCommand" containers="//@diagram/@compartments.2">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ItemEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ItemFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ItemFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureItemLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fItemItemsCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ItemFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureItemLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureItemLabelFigure.setText(&quot;Item&quot;);&#xA;fFigureItemLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureItemLabelFigure);&#xA;&#xA;&#xA;&#xA;fItemItemsCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fItemItemsCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fItemItemsCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureItemLabelFigure() {&#xA;&#x9;&#x9;return fFigureItemLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getItemItemsCompartmentFigure() {&#xA;&#x9;&#x9;return fItemItemsCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Item"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Storage/items"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Storage/items"/>
+      </modelFacet>
+      <labels visualID="5011" editPartClassName="ItemItemNameEditPart" itemSemanticEditPolicyClassName="ItemItemNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureItemLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Item/ItemName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3004" editPartClassName="CategoryEditPart" itemSemanticEditPolicyClassName="CategoryItemSemanticEditPolicy" canonicalEditPolicyClassName="CategoryCanonicalEditPolicy" compartments="//@diagram/@compartments.4" graphicalNodeEditPolicyClassName="CategoryGraphicalNodeEditPolicy" createCommandClassName="CategoryCreateCommand" containers="//@diagram/@compartments.3">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="CategoryEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CategoryFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CategoryFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureCategoryLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fCategoryContainsCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CategoryFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureCategoryLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureCategoryLabelFigure.setText(&quot;Category&quot;);&#xA;fFigureCategoryLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureCategoryLabelFigure);&#xA;&#xA;&#xA;&#xA;fCategoryContainsCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fCategoryContainsCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fCategoryContainsCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureCategoryLabelFigure() {&#xA;&#x9;&#x9;return fFigureCategoryLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getCategoryContainsCompartmentFigure() {&#xA;&#x9;&#x9;return fCategoryContainsCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Category"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Item/items"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Item/items"/>
+      </modelFacet>
+      <labels visualID="5010" editPartClassName="CategoryCategoryNameEditPart" itemSemanticEditPolicyClassName="CategoryCategoryNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureCategoryLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Category/CategoryName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3005" editPartClassName="SubCategoryEditPart" itemSemanticEditPolicyClassName="SubCategoryItemSemanticEditPolicy" canonicalEditPolicyClassName="SubCategoryCanonicalEditPolicy" graphicalNodeEditPolicyClassName="SubCategoryGraphicalNodeEditPolicy" createCommandClassName="SubCategoryCreateCommand" containers="//@diagram/@compartments.4">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SubCategoryEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SubCategoryFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SubCategoryFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSubCategoryLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SubCategoryFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureSubCategoryLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureSubCategoryLabelFigure.setText(&quot;SubCategory&quot;);&#xA;&#xA;this.add(fFigureSubCategoryLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSubCategoryLabelFigure() {&#xA;&#x9;&#x9;return fFigureSubCategoryLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/SubCategory"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Category/contains"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Category/contains"/>
+      </modelFacet>
+      <labels visualID="5009" editPartClassName="SubCategorySubCategoryNameEditPart" itemSemanticEditPolicyClassName="SubCategorySubCategoryNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureSubCategoryLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/SubCategory/SubCategoryName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <topLevelNodes visualID="2005" editPartClassName="BrandedEditPart" itemSemanticEditPolicyClassName="BrandedItemSemanticEditPolicy" canonicalEditPolicyClassName="BrandedCanonicalEditPolicy" compartments="//@diagram/@compartments.0 //@diagram/@compartments.1" graphicalNodeEditPolicyClassName="BrandedGraphicalNodeEditPolicy" createCommandClassName="BrandedCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="BrandedEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="BrandedFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class BrandedFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureBrandedLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fBrandedEmployeesCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fBrandedStoragesCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public BrandedFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureBrandedLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureBrandedLabelFigure.setText(&quot;Branded&quot;);&#xA;fFigureBrandedLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureBrandedLabelFigure);&#xA;&#xA;&#xA;&#xA;fBrandedEmployeesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fBrandedEmployeesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fBrandedEmployeesCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fBrandedStoragesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fBrandedStoragesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fBrandedStoragesCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureBrandedLabelFigure() {&#xA;&#x9;&#x9;return fFigureBrandedLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getBrandedEmployeesCompartmentFigure() {&#xA;&#x9;&#x9;return fBrandedEmployeesCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getBrandedStoragesCompartmentFigure() {&#xA;&#x9;&#x9;return fBrandedStoragesCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Branded"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/shops"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/shops"/>
+      </modelFacet>
+      <labels visualID="5006" editPartClassName="BrandedBNameEditPart" itemSemanticEditPolicyClassName="BrandedBNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureBrandedLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Branded/BName"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2006" editPartClassName="SpecialisticEditPart" itemSemanticEditPolicyClassName="SpecialisticItemSemanticEditPolicy" canonicalEditPolicyClassName="SpecialisticCanonicalEditPolicy" compartments="//@diagram/@compartments.5 //@diagram/@compartments.6" graphicalNodeEditPolicyClassName="SpecialisticGraphicalNodeEditPolicy" createCommandClassName="SpecialisticCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SpecialisticEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SpecialisticFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SpecialisticFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSpecialisticLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fSpecialisticEmployeesCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fSpecialisticStoragesCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SpecialisticFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureSpecialisticLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureSpecialisticLabelFigure.setText(&quot;Specialistic&quot;);&#xA;fFigureSpecialisticLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureSpecialisticLabelFigure);&#xA;&#xA;&#xA;&#xA;fSpecialisticEmployeesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fSpecialisticEmployeesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fSpecialisticEmployeesCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fSpecialisticStoragesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fSpecialisticStoragesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fSpecialisticStoragesCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSpecialisticLabelFigure() {&#xA;&#x9;&#x9;return fFigureSpecialisticLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getSpecialisticEmployeesCompartmentFigure() {&#xA;&#x9;&#x9;return fSpecialisticEmployeesCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getSpecialisticStoragesCompartmentFigure() {&#xA;&#x9;&#x9;return fSpecialisticStoragesCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Specialistic"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/shops"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/shops"/>
+      </modelFacet>
+      <labels visualID="5007" editPartClassName="SpecialisticTypeEditPart" itemSemanticEditPolicyClassName="SpecialisticTypeItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureSpecialisticLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Specialistic/Type"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2007" editPartClassName="ShopsEditPart" itemSemanticEditPolicyClassName="ShopsItemSemanticEditPolicy" canonicalEditPolicyClassName="ShopsCanonicalEditPolicy" compartments="//@diagram/@compartments.7 //@diagram/@compartments.8" graphicalNodeEditPolicyClassName="ShopsGraphicalNodeEditPolicy" createCommandClassName="ShopsCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ShopsEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ShopsFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ShopsFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureShopsLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fShopsEmployeesCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fShopsStoragesCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ShopsFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureShopsLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureShopsLabelFigure.setText(&quot;Shops&quot;);&#xA;fFigureShopsLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureShopsLabelFigure);&#xA;&#xA;&#xA;&#xA;fShopsEmployeesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fShopsEmployeesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fShopsEmployeesCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fShopsStoragesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fShopsStoragesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fShopsStoragesCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureShopsLabelFigure() {&#xA;&#x9;&#x9;return fFigureShopsLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getShopsEmployeesCompartmentFigure() {&#xA;&#x9;&#x9;return fShopsEmployeesCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getShopsStoragesCompartmentFigure() {&#xA;&#x9;&#x9;return fShopsStoragesCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Shops"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/shops"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/shops"/>
+      </modelFacet>
+      <labels visualID="5008" editPartClassName="ShopsShopNameEditPart" itemSemanticEditPolicyClassName="ShopsShopNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureShopsLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Shops/ShopName"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2004" editPartClassName="EmployeeEditPart" itemSemanticEditPolicyClassName="EmployeeItemSemanticEditPolicy" canonicalEditPolicyClassName="EmployeeCanonicalEditPolicy" graphicalNodeEditPolicyClassName="EmployeeGraphicalNodeEditPolicy" createCommandClassName="EmployeeCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@childNodes.0/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="EmployeeFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class EmployeeFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureEmployeeLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public EmployeeFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureEmployeeLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureEmployeeLabelFigure.setText(&quot;Employee&quot;);&#xA;&#xA;this.add(fFigureEmployeeLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureEmployeeLabelFigure() {&#xA;&#x9;&#x9;return fFigureEmployeeLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="myShoppingMall.genmodel#//myShoppingMall/Employee"/>
+        <containmentMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/employees"/>
+        <childMetaFeature href="myShoppingMall.genmodel#//myShoppingMall/Mall/employees"/>
+      </modelFacet>
+      <labels visualID="5005" editPartClassName="EmployeeEmployeeNameEditPart" itemSemanticEditPolicyClassName="EmployeeEmployeeNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureEmployeeLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="myShoppingMall.genmodel#//myShoppingMall/Employee/EmployeeName"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <compartments visualID="7004" editPartClassName="BrandedBrandedEmployeesCompartmentEditPart" itemSemanticEditPolicyClassName="BrandedBrandedEmployeesCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="BrandedBrandedEmployeesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="BrandedEmployeesCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.0" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getBrandedEmployeesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7010" editPartClassName="BrandedBrandedStoragesCompartmentEditPart" itemSemanticEditPolicyClassName="BrandedBrandedStoragesCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="BrandedBrandedStoragesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.1" title="BrandedStoragesCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.0" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getBrandedStoragesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7007" editPartClassName="StorageStorageItemsCompartmentEditPart" itemSemanticEditPolicyClassName="StorageStorageItemsCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="StorageStorageItemsCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.2" title="StorageItemsCompartment" needsTitle="false" node="//@diagram/@childNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getStorageItemsCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7008" editPartClassName="ItemItemItemsCompartmentEditPart" itemSemanticEditPolicyClassName="ItemItemItemsCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ItemItemItemsCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.3" title="ItemItemsCompartment" needsTitle="false" node="//@diagram/@childNodes.2" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getItemItemsCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7009" editPartClassName="CategoryCategoryContainsCompartmentEditPart" itemSemanticEditPolicyClassName="CategoryCategoryContainsCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="CategoryCategoryContainsCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.4" title="CategoryContainsCompartment" needsTitle="false" node="//@diagram/@childNodes.3" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getCategoryContainsCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7005" editPartClassName="SpecialisticSpecialisticEmployeesCompartmentEditPart" itemSemanticEditPolicyClassName="SpecialisticSpecialisticEmployeesCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="SpecialisticSpecialisticEmployeesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="SpecialisticEmployeesCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getSpecialisticEmployeesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7011" editPartClassName="SpecialisticSpecialisticStoragesCompartmentEditPart" itemSemanticEditPolicyClassName="SpecialisticSpecialisticStoragesCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="SpecialisticSpecialisticStoragesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.1" title="SpecialisticStoragesCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getSpecialisticStoragesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7006" editPartClassName="ShopsShopsEmployeesCompartmentEditPart" itemSemanticEditPolicyClassName="ShopsShopsEmployeesCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ShopsShopsEmployeesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="ShopsEmployeesCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.2" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getShopsEmployeesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7012" editPartClassName="ShopsShopsStoragesCompartmentEditPart" itemSemanticEditPolicyClassName="ShopsShopsStoragesCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ShopsShopsStoragesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.1" title="ShopsStoragesCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.2" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getShopsStoragesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <palette>
+      <groups title="Objects" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Branded" description="Create new Branded" genNodes="//@diagram/@topLevelNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Category" description="Create new Category" genNodes="//@diagram/@childNodes.3"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Employee" description="Create new Employee" genNodes="//@diagram/@childNodes.0 //@diagram/@topLevelNodes.3"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Item" description="Create new Item" genNodes="//@diagram/@childNodes.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Offer" description="Create new Offer"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Shops" description="Create new Shops" genNodes="//@diagram/@topLevelNodes.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Specialistic" description="Create new Specialistic" genNodes="//@diagram/@topLevelNodes.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Storage" description="Create new Storage" genNodes="//@diagram/@childNodes.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="SubCategory" description="Create new SubCategory" genNodes="//@diagram/@childNodes.4"/>
+      </groups>
+    </palette>
+    <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="myShoppingMall.diagram.general" name="MyShoppingMall Diagram">
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="myShoppingMall.diagram.appearance" name="Appearance" kind="Appearance"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="myShoppingMall.diagram.connections" name="Connections" kind="Connections"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="myShoppingMall.diagram.printing" name="Printing" kind="Printing"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="myShoppingMall.diagram.rulersAndGrid" name="Rulers And Grid" kind="RulersAndGrid"/>
+    </preferencePages>
+  </diagram>
+  <plugin printingEnabled="true">
+    <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
+    <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
+  </plugin>
+  <editor/>
+  <navigator>
+    <childReferences child="//@diagram"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram/@childNodes.3" child="//@diagram/@childNodes.4"/>
+    <childReferences parent="//@diagram/@childNodes.2" child="//@diagram/@childNodes.3"/>
+    <childReferences parent="//@diagram/@childNodes.1" child="//@diagram/@childNodes.2"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@childNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.1"/>
+    <childReferences parent="//@diagram/@topLevelNodes.2" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.2" child="//@diagram/@childNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.2"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.3"/>
+  </navigator>
+  <diagramUpdater/>
+  <propertySheet>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="appearance"/>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="diagram"/>
+    <tabs xsi:type="gmfgen:GenCustomPropertyTab" iD="domain" label="Core">
+      <filter xsi:type="gmfgen:TypeTabFilter">
+        <types>org.eclipse.gmf.runtime.notation.View</types>
+        <types>org.eclipse.gef.EditPart</types>
+        <generatedTypes>abstractNavigatorItem</generatedTypes>
+      </filter>
+    </tabs>
+  </propertySheet>
+  <domainGenModel href="myShoppingMall.genmodel#/"/>
+  <labelParsers extensibleViaService="true">
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
+  </labelParsers>
+  <contextMenus context="//@diagram">
+    <items xsi:type="gmfgen:LoadResourceAction"/>
+  </contextMenus>
+</gmfgen:GenEditorGenerator>

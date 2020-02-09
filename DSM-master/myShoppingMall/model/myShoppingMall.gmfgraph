@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="myShoppingMall">
+  <figures name="Default">
+    <descriptors name="ShopsFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ShopsFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ShopsLabelFigure" text="Shops">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ShopsEmployeesCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="ShopsStoragesCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureShopsLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors accessor="getShopsEmployeesCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+      <accessors accessor="getShopsStoragesCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="StorageFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="StorageFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="StorageLabelFigure" text="Storage">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="StorageItemsCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureStorageLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getStorageItemsCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="ItemFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="ItemFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ItemLabelFigure" text="Item">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ItemItemsCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureItemLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+      <accessors accessor="getItemItemsCompartmentFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="OfferFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="OfferFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="OfferLabelFigure" text="Offer"/>
+      </actualFigure>
+      <accessors accessor="getFigureOfferLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="CategoryFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CategoryFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="CategoryLabelFigure" text="Category">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="CategoryContainsCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureCategoryLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+      <accessors accessor="getCategoryContainsCompartmentFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="SubCategoryFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="SubCategoryFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SubCategoryLabelFigure" text="SubCategory"/>
+      </actualFigure>
+      <accessors accessor="getFigureSubCategoryLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EmployeeFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="EmployeeFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="EmployeeLabelFigure" text="Employee"/>
+      </actualFigure>
+      <accessors accessor="getFigureEmployeeLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="BrandedFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="BrandedFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="BrandedLabelFigure" text="Branded">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="BrandedEmployeesCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="BrandedStoragesCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureBrandedLabelFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+      <accessors accessor="getBrandedEmployeesCompartmentFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.1"/>
+      <accessors accessor="getBrandedStoragesCompartmentFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="SpecialisticFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="SpecialisticFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SpecialisticLabelFigure" text="Specialistic">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="SpecialisticEmployeesCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="SpecialisticStoragesCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureSpecialisticLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+      <accessors accessor="getSpecialisticEmployeesCompartmentFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
+      <accessors accessor="getSpecialisticStoragesCompartmentFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.2"/>
+    </descriptors>
+  </figures>
+  <nodes name="Shops" figure="ShopsFigure"/>
+  <nodes name="Storage" figure="StorageFigure"/>
+  <nodes name="Item" figure="ItemFigure"/>
+  <nodes name="Offer" figure="OfferFigure"/>
+  <nodes name="Category" figure="CategoryFigure"/>
+  <nodes name="SubCategory" figure="SubCategoryFigure"/>
+  <nodes name="Employee" figure="EmployeeFigure"/>
+  <nodes name="Branded" figure="BrandedFigure"/>
+  <nodes name="Specialistic" figure="SpecialisticFigure"/>
+  <compartments name="ShopsEmployeesCompartment" figure="ShopsFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <compartments name="ShopsStoragesCompartment" figure="ShopsFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.2"/>
+  <compartments name="StorageItemsCompartment" figure="StorageFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <compartments name="ItemItemsCompartment" figure="ItemFigure" collapsible="true" accessor="//@figures.0/@descriptors.2/@accessors.1"/>
+  <compartments name="CategoryContainsCompartment" figure="CategoryFigure" collapsible="true" accessor="//@figures.0/@descriptors.4/@accessors.1"/>
+  <compartments name="BrandedEmployeesCompartment" figure="BrandedFigure" collapsible="true" accessor="//@figures.0/@descriptors.7/@accessors.1"/>
+  <compartments name="BrandedStoragesCompartment" figure="BrandedFigure" collapsible="true" accessor="//@figures.0/@descriptors.7/@accessors.2"/>
+  <compartments name="SpecialisticEmployeesCompartment" figure="SpecialisticFigure" collapsible="true" accessor="//@figures.0/@descriptors.8/@accessors.1"/>
+  <compartments name="SpecialisticStoragesCompartment" figure="SpecialisticFigure" collapsible="true" accessor="//@figures.0/@descriptors.8/@accessors.2"/>
+  <labels name="ShopsLabel" figure="ShopsFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="StorageLabel" figure="StorageFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="ItemLabel" figure="ItemFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="OfferLabel" figure="OfferFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="CategoryLabel" figure="CategoryFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="SubCategoryLabel" figure="SubCategoryFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="EmployeeLabel" figure="EmployeeFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="BrandedLabel" figure="BrandedFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels name="SpecialisticLabel" figure="SpecialisticFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+</gmfgraph:Canvas>

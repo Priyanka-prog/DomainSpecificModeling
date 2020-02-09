@@ -1,0 +1,34 @@
+--@path Shops=./myShoppingMall.ecore
+--@path Employees=./employees.ecore
+
+module M2Mtransformation;
+create OUT: Employees from IN: Shops;
+
+
+rule Employee2Employee {
+	from 
+		s: Shops!Employee
+	to 
+		t: Employees!Employees(
+			name <- s.EmployeeName,
+			schedule <- s.schedule)
+}
+
+rule Branded2Brand {
+	from
+		s: Shops!Branded
+	to
+		
+		t: Employees!Brands (
+			name <- s.BName,
+			employees <- s.employees )
+}
+
+rule Schedule2Schedule {
+	from
+		s: Shops!Schedule
+	to
+		t:Employees!Schedule(
+			startTime <- s.StartTime,
+			endTime <- s.EndTime)
+}

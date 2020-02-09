@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+
+-->
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="mmd"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="mmd"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/MyShoppingMallDiagramFile.gif"
+         extensions="mmd"
+         default="true"
+         class="myShoppingMall.diagram.part.MyShoppingMallDiagramEditor"
+         matchingStrategy="myShoppingMall.diagram.part.MyShoppingMallMatchingStrategy"
+         contributorClass="myShoppingMall.diagram.part.MyShoppingMallDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="myShoppingMall.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/MyShoppingMallDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="myShoppingMall.diagram.part.MyShoppingMallCreationWizard"
+  	     id="myShoppingMall.diagram.part.MyShoppingMallCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus" id="init-diagram-action">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="myShoppingMall.diagram.InitDiagram"
+            nameFilter="*.mm"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="myShoppingMall.diagram.part.MyShoppingMallInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="myShoppingMall.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="MyShoppingMallPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.printing.render.providers.DiagramWithPrintGlobalActionHandlerProvider"
+         id="MyShoppingMallPresentationPrint">
+         <Priority name="Lowest"/>
+         <ViewId id="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="print"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="MyShoppingMallPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="MyShoppingMallRender">
+         <Priority name="Lowest"/>
+         <ViewId id="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.markerNavigationProviders" id="markers-navigation">
+      <?gmfgen generated="true"?>
+      <MarkerNavigationProvider class="myShoppingMall.diagram.providers.MyShoppingMallMarkerNavigationProvider">
+         <MarkerType name="myShoppingMall.diagram.diagnostic"/>
+         <Priority name="Lowest"/>
+      </MarkerNavigationProvider>
+   </extension>
+
+   <extension id="diagnostic" name="MyShoppingMall Plugin problems" point="org.eclipse.core.resources.markers">
+      <?gmfgen generated="true"?>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.gmf.runtime.common.ui.services.marker"/>
+      <persistent value="true"/>
+   </extension>   
+
+   <extension id="validationDecoratorProvider" name="ValidationDecorations" point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="myShoppingMall.diagram.providers.MyShoppingMallValidationDecoratorProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.diagram.ui.editparts.IPrimaryEditPart(org.eclipse.gmf.runtime.diagram.ui)" id="PRIMARY_VIEW"/>
+         <context decoratorTargets="PRIMARY_VIEW"/>
+      </decoratorProvider>
+   </extension>
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="myShoppingMall.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="myShoppingMall.diagram.general"
+            name="%prefpage.myShoppingMall.diagram.general"
+            class="myShoppingMall.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="myShoppingMall.diagram.appearance"
+            name="%prefpage.myShoppingMall.diagram.appearance"
+            category="myShoppingMall.diagram.general"
+            class="myShoppingMall.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="myShoppingMall.diagram.connections"
+            name="%prefpage.myShoppingMall.diagram.connections"
+            category="myShoppingMall.diagram.general"
+            class="myShoppingMall.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="myShoppingMall.diagram.printing"
+            name="%prefpage.myShoppingMall.diagram.printing"
+            category="myShoppingMall.diagram.general"
+            class="myShoppingMall.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="myShoppingMall.diagram.rulersAndGrid"
+            name="%prefpage.myShoppingMall.diagram.rulersAndGrid"
+            category="myShoppingMall.diagram.general"
+            class="myShoppingMall.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="myShoppingMall.diagram"
+            labelProvider="myShoppingMall.diagram.sheet.MyShoppingMallSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="myShoppingMall.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="myShoppingMall.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="myShoppingMall.diagram.sheet.MyShoppingMallPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="myShoppingMall.diagram.navigator.MyShoppingMallAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="myShoppingMall.diagram.providers.MyShoppingMallViewProvider">
+         <Priority name="Lowest"/>
+         <object id="referencing-diagrams" class="org.eclipse.gmf.runtime.notation.Diagram">
+            <method name="getType()" value="mm"/>
+         </object>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="MyShoppingMall"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2005,2006,2007,2004,3006,3002,3003,3004,3005"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="myShoppingMall.diagram.providers.MyShoppingMallEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="MyShoppingMall"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2005,2006,2007,2004,3006,3002,3003,3004,3005"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value=""/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5006,5007,5008,5005,5013,5012,5011,5010,5009"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value="7004,7010,7007,7008,7009,7005,7011,7006,7012"/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfMallEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.MallEditPart" id="Mall_1000"/>
+         <context elements="Mall_1000"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfBrandedEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.BrandedEditPart" id="Branded_2005"/>
+         <context elements="Branded_2005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfSpecialisticEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.SpecialisticEditPart" id="Specialistic_2006"/>
+         <context elements="Specialistic_2006"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfShopsEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.ShopsEditPart" id="Shops_2007"/>
+         <context elements="Shops_2007"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfEmployeeEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.EmployeeEditPart" id="Employee_2004"/>
+         <context elements="Employee_2004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfEmployee2EditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.Employee2EditPart" id="Employee_3006"/>
+         <context elements="Employee_3006"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfStorageEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.StorageEditPart" id="Storage_3002"/>
+         <context elements="Storage_3002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfItemEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.ItemEditPart" id="Item_3003"/>
+         <context elements="Item_3003"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfCategoryEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.CategoryEditPart" id="Category_3004"/>
+         <context elements="Category_3004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="myShoppingMall.diagram.providers.assistants.MyShoppingMallModelingAssistantProviderOfSubCategoryEditPart">
+         <Priority name="Lowest"/>
+         <object class="myShoppingMall.diagram.edit.parts.SubCategoryEditPart" id="SubCategory_3005"/>
+         <context elements="SubCategory_3005"/>
+      </modelingAssistantProvider>
+      
+   </extension>
+
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="myShoppingMall.diagram.providers.MyShoppingMallIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="myShoppingMall.diagram.providers.MyShoppingMallParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders" id="decorator-provider">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="myShoppingMall.diagram.providers.MyShoppingMallShortcutsDecoratorProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)" id="generated-top-nodes">
+            <method name="getType()" value="2005,2006,2007,2004"/>
+         </object>
+         <context decoratorTargets="generated-top-nodes"/>
+      </decoratorProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Mall_1000"
+               name="%metatype.name.Mall_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Mall"
+               edithelper="myShoppingMall.diagram.edit.helpers.MallEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Branded_2005"
+               name="%metatype.name.Branded_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Branded"
+               edithelper="myShoppingMall.diagram.edit.helpers.BrandedEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Specialistic_2006"
+               name="%metatype.name.Specialistic_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Specialistic"
+               edithelper="myShoppingMall.diagram.edit.helpers.SpecialisticEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Shops_2007"
+               name="%metatype.name.Shops_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Shops"
+               edithelper="myShoppingMall.diagram.edit.helpers.ShopsEditHelper">
+            <param name="semanticHint" value="2007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <specializationType
+               id="myShoppingMall.diagram.Employee_2004"
+               name="%metatype.name.Employee_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="myShoppingMall.diagram.Employee_3006"/>
+            <param name="semanticHint" value="2004"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Employee_3006"
+               name="%metatype.name.Employee_3006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Employee"
+               edithelper="myShoppingMall.diagram.edit.helpers.EmployeeEditHelper">
+            <param name="semanticHint" value="3006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Storage_3002"
+               name="%metatype.name.Storage_3002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Storage"
+               edithelper="myShoppingMall.diagram.edit.helpers.StorageEditHelper">
+            <param name="semanticHint" value="3002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Item_3003"
+               name="%metatype.name.Item_3003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Item"
+               edithelper="myShoppingMall.diagram.edit.helpers.ItemEditHelper">
+            <param name="semanticHint" value="3003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.Category_3004"
+               name="%metatype.name.Category_3004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Category"
+               edithelper="myShoppingMall.diagram.edit.helpers.CategoryEditHelper">
+            <param name="semanticHint" value="3004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://www.myshoppingmall.com/1.0">
+         <metamodelType
+               id="myShoppingMall.diagram.SubCategory_3005"
+               name="%metatype.name.SubCategory_3005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="SubCategory"
+               edithelper="myShoppingMall.diagram.edit.helpers.SubCategoryEditHelper">
+            <param name="semanticHint" value="3005"/>
+         </metamodelType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="myShoppingMall.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="myShoppingMall.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="myShoppingMall.diagram.TypeContext">
+         <elementType ref="myShoppingMall.diagram.Mall_1000"/>
+         <elementType ref="myShoppingMall.diagram.Branded_2005"/>
+         <elementType ref="myShoppingMall.diagram.Specialistic_2006"/>
+         <elementType ref="myShoppingMall.diagram.Shops_2007"/>
+         <elementType ref="myShoppingMall.diagram.Employee_2004"/>
+         <elementType ref="myShoppingMall.diagram.Employee_3006"/>
+         <elementType ref="myShoppingMall.diagram.Storage_3002"/>
+         <elementType ref="myShoppingMall.diagram.Item_3003"/>
+         <elementType ref="myShoppingMall.diagram.Category_3004"/>
+         <elementType ref="myShoppingMall.diagram.SubCategory_3005"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isURIEditorInput">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="myShoppingMall.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="myShoppingMall.diagram"
+           properties="isURIEditorInput"
+           class="myShoppingMall.diagram.part.MyShoppingMallUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isShortcut">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="myShoppingMall.diagram.ShortcutPropertyTester"
+           type="org.eclipse.gmf.runtime.notation.View"
+           namespace="myShoppingMall.diagram"
+           properties="isShortcut"
+           class="myShoppingMall.diagram.part.MyShoppingMallShortcutPropertyTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer" id="navigator-viewbinding">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="myShoppingMall.diagram.resourceContent"/>
+			<contentExtension pattern="myShoppingMall.diagram.domainResourceContent"/>
+            <contentExtension pattern="myShoppingMall.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="myShoppingMall.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent" id="navigator-content">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="myShoppingMall.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="myShoppingMall.diagram.navigator.MyShoppingMallNavigatorContentProvider" 
+            labelProvider="myShoppingMall.diagram.navigator.MyShoppingMallNavigatorLabelProvider"
+            icon="icons/obj16/MyShoppingMallDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="mmd"/>
+               </and>
+               <instanceof value="myShoppingMall.diagram.navigator.MyShoppingMallAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="myShoppingMall.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="myShoppingMall.diagram.navigator.MyShoppingMallAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="myShoppingMall.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="myShoppingMall.diagram.navigatorSorter" 
+               class="myShoppingMall.diagram.navigator.MyShoppingMallNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="mmd"/>
+                  </and>
+                  <instanceof value="myShoppingMall.diagram.navigator.MyShoppingMallAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="myShoppingMall.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="myShoppingMall.diagram.navigator.MyShoppingMallDomainNavigatorContentProvider" 
+            labelProvider="myShoppingMall.diagram.navigator.MyShoppingMallDomainNavigatorLabelProvider"
+            icon="icons/obj16/MyShoppingMallDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="mm"/>
+               </and>
+               <instanceof value="myShoppingMall.diagram.navigator.MyShoppingMallDomainNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <instanceof value="myShoppingMall.diagram.navigator.MyShoppingMallDomainNavigatorItem"/>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="myShoppingMall.diagram.navigatorActionProvider"
+            class="myShoppingMall.diagram.navigator.MyShoppingMallNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="myShoppingMall.diagram.navigator.MyShoppingMallAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="myShoppingMall.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper" id="navigator-linkhelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="myShoppingMall.diagram.navigatorLinkHelper"
+            class="myShoppingMall.diagram.navigator.MyShoppingMallNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="myShoppingMall.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="myShoppingMall.diagram.navigator.MyShoppingMallAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="myShoppingMall.diagram.part.MyShoppingMallDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="myShoppingMall.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="myShoppingMall.diagram.updateDiagram"
+         contextId="myShoppingMall.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="myShoppingMall.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="myShoppingMall.diagram.edit.parts.MallEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="myShoppingMall.diagram.LoadResourceAction"
+         name="Load Resource"
+         categoryId="myShoppingMall.diagram.part.MyShoppingMallDiagramEditorID"
+         defaultHandler="myShoppingMall.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+
+   <!-- optionally, specify keybindings -->
+</plugin>

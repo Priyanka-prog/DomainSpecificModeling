@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated myShoppingMall -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="myShoppingMall.presentation.MyShoppingMallModelWizardID"
+            name="%_UI_MyShoppingMallModelWizard_label"
+            class="myShoppingMall.presentation.MyShoppingMallModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MyShoppingMallModelFile.gif">
+         <description>%_UI_MyShoppingMallModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated myShoppingMall -->
+      <editor
+            id="myShoppingMall.presentation.MyShoppingMallEditorID"
+            name="%_UI_MyShoppingMallEditor_label"
+            icon="icons/full/obj16/MyShoppingMallModelFile.gif"
+            extensions="myshoppingmall"
+            class="myShoppingMall.presentation.MyShoppingMallEditor"
+            contributorClass="myShoppingMall.presentation.MyShoppingMallActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,37 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.myshoppingmall.com/1.0')]
+
+
+[template public generateElement(aMall : Mall)]
+[comment @main/]
+[file (aMall.Name, false, 'UTF-8')]
+<html>
+	<head>
+		<title>[aMall.Name.concat(' ')/] </title>
+	</head>
+	<body>
+		<ul>
+		[for (aShop : Shops | aMall.shops)]
+			<li>
+			<p>Name: [aShop.ShopName/]</p>
+			<p>Location: [aShop.Floor/]</p>
+		[for (aEmployee : Employee | aShop.employees)]
+			[if(aEmployee.Designation.equalsIgnoreCase('Manager'))]
+					<p>Manager: [aEmployee.ID.toString().concat(' ').concat(aEmployee.EmployeeName)/]</p>
+			[/if]
+		[/for]
+			<p>Opening Time: [aShop.schedule.StartTime.toString().concat(' - ').concat(aShop.schedule.EndTime.toString())/]</p>
+			[if (aShop.oclIsTypeOf(Branded))]
+				<p>Brand: [aShop.oclAsType(Branded).BName/]</p>
+			[/if]
+			[if (aShop.oclIsTypeOf(Specialistic))] 
+				<p>Type of products: [aShop.oclAsType(Specialistic).Type/]</p>
+			[/if]
+			</li>
+		[/for]
+		</ul>
+	</body>
+</html>
+
+[/file]
+[/template]

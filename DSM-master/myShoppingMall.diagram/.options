@@ -1,0 +1,7 @@
+# Tracing options for the myShoppingMall.diagram plug-in
+
+# Common issues
+myShoppingMall.diagram/debug=false
+
+# Visual IDs
+myShoppingMall.diagram/debug/visualID=false

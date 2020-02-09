@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_zF0zgC4hEeqaLrxC39lI-g" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_1YA4kC4hEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_1YA4ki4hEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_1YBfoC4hEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_JDAcgC4iEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Mall/Name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JDAcgS4iEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_OEFJsC4iEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Mall/Location"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_OEFJsS4iEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1YBfoS4hEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1YBfoi4hEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_1YBfoy4hEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1YBfpC4hEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1YBfpS4hEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_1YBfpi4hEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1YBfpy4hEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1YBfqC4hEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Mall"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1YA4kS4hEeqaLrxC39lI-g" x="66" y="30" width="161" height="110"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_W5z0QC4iEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_W50bUC4iEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_W50bUS4iEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_YIyI0C4iEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Shops/ShopName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YIyI0S4iEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_d1l6oC4iEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Shops/Floor"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d1l6oS4iEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_gFT6gC4iEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Shops/Address"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_gFT6gS4iEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_kXF4wC4iEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Shops/Photos"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_kXF4wS4iEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_W50bUi4iEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_W50bUy4iEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_W50bVC4iEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_W50bVS4iEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_W50bVi4iEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_W50bVy4iEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_W50bWC4iEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_W50bWS4iEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Shops"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W5z0QS4iEeqaLrxC39lI-g" x="432" y="168"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_xGuXoC4jEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_xGu-sC4jEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_xGu-sS4jEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_yDsWMC4jEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Storage/Type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yDs9QC4jEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_CJR5sC4kEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Storage/NumberOfLayers"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_CJR5sS4kEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_EyTKYC4kEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Storage/Size"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_EyTKYS4kEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_F4nSMC4kEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Storage/Position"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_F4nSMS4kEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xGu-si4jEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xGu-sy4jEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_xGu-tC4jEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xGu-tS4jEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xGu-ti4jEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_xGu-ty4jEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xGu-uC4jEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xGu-uS4jEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Storage"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xGuXoS4jEeqaLrxC39lI-g" x="636" y="360"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_5Od60C4jEeqaLrxC39lI-g" type="2005" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5Oeh4C4jEeqaLrxC39lI-g" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_5Oeh4S4jEeqaLrxC39lI-g" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_7UTl8C4jEeqaLrxC39lI-g" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="myShoppingMall.ecore#//StorageType/Table"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_7UTl8S4jEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_88iIAC4jEeqaLrxC39lI-g" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="myShoppingMall.ecore#//StorageType/Fridge"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_88iIAS4jEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_9o0mQC4jEeqaLrxC39lI-g" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="myShoppingMall.ecore#//StorageType/Shelves"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9o0mQS4jEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_5Oeh4i4jEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_5Oeh4y4jEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_5Oeh5C4jEeqaLrxC39lI-g" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_5Oeh5S4jEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_5Oeh5i4jEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="myShoppingMall.ecore#//StorageType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Od60S4jEeqaLrxC39lI-g" x="288" y="30"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_YRvloC4kEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_YRwMsC4kEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_YRwMsS4kEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_5hboMC4lEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Offer/StartDate"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5hboMS4lEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_GCLL8C4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Offer/EndDate"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_GCLL8S4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_IFegcC4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Offer/Discount"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IFegcS4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_KNPeMC4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Offer/Photos"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KNPeMS4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_LcSrQC4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Offer/Type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LcSrQS4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_8UTGgC4nEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Offer/IsValid"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8UTGgS4nEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YRwMsi4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YRwMsy4kEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_YRwMtC4kEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YRwMtS4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YRwMti4kEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_YRwMty4kEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YRwMuC4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YRwMuS4kEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Offer"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YRvloS4kEeqaLrxC39lI-g" x="864" y="744"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ZMD40C4kEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZMEf4C4kEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ZMEf4S4kEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_aIBx0C4kEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Category/CategoryName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aICY4C4kEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ZMEf4i4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ZMEf4y4kEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ZMEf5C4kEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ZMEf5S4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ZMEf5i4kEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ZMEf5y4kEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ZMEf6C4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ZMEf6S4kEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Category"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZMD40S4kEeqaLrxC39lI-g" x="384" y="744"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_jbEDcC4kEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_jbEqgC4kEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jbEqgS4kEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_kqbZkC4kEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//SubCategory/SubCategoryName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_kqbZkS4kEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jbEqgi4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jbEqgy4kEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jbEqhC4kEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jbEqhS4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jbEqhi4kEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jbEqhy4kEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jbEqiC4kEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jbEqiS4kEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//SubCategory"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jbEDcS4kEeqaLrxC39lI-g" x="360" y="912"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_d7fm8C4lEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_d7fm8i4lEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_d7fm8y4lEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_hFgr4C4lEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Schedule/StartTime"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hFgr4S4lEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_1hF_QC4lEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Schedule/EndTime"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_1hF_QS4lEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_d7fm9C4lEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_d7fm9S4lEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_d7fm9i4lEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_d7fm9y4lEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_d7fm-C4lEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_d7fm-S4lEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_d7fm-i4lEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_d7fm-y4lEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Schedule"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7fm8S4lEeqaLrxC39lI-g" x="228" y="576"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Q5SfcC4mEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Q5Sfci4mEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Q5Sfcy4mEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_X9-DIC4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Employee/EmployeeName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X9-DIS4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_aUX50C4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Employee/ID"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aUX50S4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_by1b4C4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Employee/DateOfBirth"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_by1b4S4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_dtMPwC4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Employee/Designation"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_dtMPwS4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_fpF7wC4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Employee/FiscalCode"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fpF7wS4mEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_hRWTAC4mEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Employee/Shifts"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hRW6EC4mEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Q5SfdC4mEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Q5SfdS4mEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Q5Sfdi4mEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Q5Sfdy4mEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Q5SfeC4mEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Q5SfeS4mEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Q5Sfei4mEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Q5Sfey4mEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Employee"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q5SfcS4mEeqaLrxC39lI-g" x="204" y="336"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_WWzmIC4oEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_WWzmIi4oEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_WWzmIy4oEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_WW00QC4oEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Item/ItemName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WW00QS4oEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_WW00Qi4oEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Item/BName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WW00Qy4oEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_WW00RC4oEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Item/Color"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WW00RS4oEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_WW00Ri4oEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Item/Model"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WW00Ry4oEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_WW00SC4oEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Item/Size"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WW00SS4oEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_WW00Si4oEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Item/Position"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WW00Sy4oEeqaLrxC39lI-g"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Lddt8C48EeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Item/Price"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Lddt8S48EeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_WWzmJC4oEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_WWzmJS4oEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_WWzmJi4oEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_WWzmJy4oEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_WWzmKC4oEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_WWzmKS4oEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_WWzmKi4oEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_WWzmKy4oEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Item"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WWzmIS4oEeqaLrxC39lI-g" x="642" y="528"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yddK8C4sEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yddK8i4sEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yddK8y4sEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_0CEYUC4sEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Branded/BName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0CEYUS4sEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yddK9C4sEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yddK9S4sEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yddK9i4sEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yddK9y4sEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yddK-C4sEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yddK-S4sEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yddK-i4sEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yddK-y4sEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Branded"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yddK8S4sEeqaLrxC39lI-g" x="444" y="30"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_11NJ4C4sEeqaLrxC39lI-g" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_11PmIC4sEeqaLrxC39lI-g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_11PmIS4sEeqaLrxC39lI-g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_23S5AC4sEeqaLrxC39lI-g" type="3001">
+        <element xmi:type="ecore:EAttribute" href="myShoppingMall.ecore#//Specialistic/Type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_23S5AS4sEeqaLrxC39lI-g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_11PmIi4sEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_11PmIy4sEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_11PmJC4sEeqaLrxC39lI-g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_11PmJS4sEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_11PmJi4sEeqaLrxC39lI-g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_11PmJy4sEeqaLrxC39lI-g" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_11PmKC4sEeqaLrxC39lI-g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_11PmKS4sEeqaLrxC39lI-g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="myShoppingMall.ecore#//Specialistic"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_11NJ4S4sEeqaLrxC39lI-g" x="642" y="30"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_zF0zgS4hEeqaLrxC39lI-g"/>
+  <element xmi:type="ecore:EPackage" href="myShoppingMall.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_Pr9UMC4nEeqaLrxC39lI-g" type="4003" source="_W5z0QC4iEeqaLrxC39lI-g" target="_Q5SfcC4mEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Pr9UMy4nEeqaLrxC39lI-g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Pr9UNC4nEeqaLrxC39lI-g" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Pr9UNS4nEeqaLrxC39lI-g" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Pr9UNi4nEeqaLrxC39lI-g" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Pr9UMS4nEeqaLrxC39lI-g" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Shops/employees"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pr9UMi4nEeqaLrxC39lI-g" points="[0, 0, 143, -60]$[-143, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_li8oFC5HEeqaLrxC39lI-g" id="(0.2422360248447205,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pr_wcC4nEeqaLrxC39lI-g" id="(0.6528497409326425,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_bvpIgC4nEeqaLrxC39lI-g" type="4003" source="_1YA4kC4hEeqaLrxC39lI-g" target="_Q5SfcC4mEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bvpvkC4nEeqaLrxC39lI-g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bvpvkS4nEeqaLrxC39lI-g" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bvpvki4nEeqaLrxC39lI-g" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bvpvky4nEeqaLrxC39lI-g" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bvpIgS4nEeqaLrxC39lI-g" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Mall/employees"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bvpIgi4nEeqaLrxC39lI-g" points="[0, 0, -130, -269]$[130, 60, 0, -209]$[130, 269, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ljFyAi5HEeqaLrxC39lI-g" id="(0.43478260869565216,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bvqWoC4nEeqaLrxC39lI-g" id="(0.30569948186528495,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_UP4rAC4qEeqaLrxC39lI-g" type="4003" source="_W5z0QC4iEeqaLrxC39lI-g" target="_xGuXoC4jEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UP4rAy4qEeqaLrxC39lI-g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_UP4rBC4qEeqaLrxC39lI-g" x="50" y="-25"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_UP4rBS4qEeqaLrxC39lI-g" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_UP4rBi4qEeqaLrxC39lI-g" x="31" y="-22"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_UP4rAS4qEeqaLrxC39lI-g" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Shops/storages"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UP4rAi4qEeqaLrxC39lI-g" points="[0, 0, -166, -60]$[166, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UP4rBy4qEeqaLrxC39lI-g" id="(0.7453416149068323,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_li8oEy5HEeqaLrxC39lI-g" id="(0.4971751412429379,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5tXuQC4sEeqaLrxC39lI-g" type="4004" source="_yddK8C4sEeqaLrxC39lI-g" target="_W5z0QC4iEeqaLrxC39lI-g">
+    <styles xmi:type="notation:FontStyle" xmi:id="_5tXuQS4sEeqaLrxC39lI-g" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5tXuQi4sEeqaLrxC39lI-g" points="[0, 0, 0, -92]$[0, 92, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5tXuQy4sEeqaLrxC39lI-g" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_li8oFS5HEeqaLrxC39lI-g" id="(0.4968944099378882,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6TNmQC4sEeqaLrxC39lI-g" type="4004" source="_11NJ4C4sEeqaLrxC39lI-g" target="_W5z0QC4iEeqaLrxC39lI-g">
+    <styles xmi:type="notation:FontStyle" xmi:id="_6TNmQS4sEeqaLrxC39lI-g" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6TNmQi4sEeqaLrxC39lI-g" points="[0, 0, 147, -92]$[-147, 92, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6TNmQy4sEeqaLrxC39lI-g" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6TNmRC4sEeqaLrxC39lI-g" id="(0.7453416149068323,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_waqmQC5MEeqaLrxC39lI-g" type="4003" source="_xGuXoC4jEeqaLrxC39lI-g" target="_WWzmIC4oEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_waqmQy5MEeqaLrxC39lI-g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_waqmRC5MEeqaLrxC39lI-g" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_waqmRS5MEeqaLrxC39lI-g" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_waqmRi5MEeqaLrxC39lI-g" x="-11" y="38"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_waqmQS5MEeqaLrxC39lI-g" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Storage/items"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_waqmQi5MEeqaLrxC39lI-g" points="[0, 0, 0, -100]$[0, 100, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C6ppcC5qEeqsQoWmHHfoag" id="(0.4971751412429379,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_waqmRy5MEeqaLrxC39lI-g" id="(0.4968152866242038,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ygbKIC5SEeqS1PL1gN8A_Q" type="4003" source="_ZMD40C4kEeqaLrxC39lI-g" target="_jbEDcC4kEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ygbKIy5SEeqS1PL1gN8A_Q" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ygbKJC5SEeqS1PL1gN8A_Q" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ygbKJS5SEeqS1PL1gN8A_Q" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ygbKJi5SEeqS1PL1gN8A_Q" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ygbKIS5SEeqS1PL1gN8A_Q" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Category/subcategories"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ygbKIi5SEeqS1PL1gN8A_Q" points="[0, 0, 0, -160]$[0, 160, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C6obUi5qEeqsQoWmHHfoag" id="(0.49732620320855614,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C6pCYC5qEeqsQoWmHHfoag" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_1x8lQC5SEeqS1PL1gN8A_Q" type="4003" source="_W5z0QC4iEeqaLrxC39lI-g" target="_d7fm8C4lEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_1x9MUC5SEeqS1PL1gN8A_Q" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1x9MUS5SEeqS1PL1gN8A_Q" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_1x9MUi5SEeqS1PL1gN8A_Q" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1x9MUy5SEeqS1PL1gN8A_Q" x="-57" y="20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1x8lQS5SEeqS1PL1gN8A_Q" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Shops/schedule"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1x8lQi5SEeqS1PL1gN8A_Q" points="[0, 0, 177, -298]$[0, 237, 177, -61]$[-177, 298, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C6q3kS5qEeqsQoWmHHfoag" id="(0.4906832298136646,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1yD6AC5SEeqS1PL1gN8A_Q" id="(0.75,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_shrm4C5qEeqsQoWmHHfoag" type="4003" source="_WWzmIC4oEeqaLrxC39lI-g" target="_ZMD40C4kEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_shs1AC5qEeqsQoWmHHfoag" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_shs1AS5qEeqsQoWmHHfoag" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_shtcEC5qEeqsQoWmHHfoag" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_shtcES5qEeqsQoWmHHfoag" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_shrm4S5qEeqsQoWmHHfoag" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Item/items"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_shrm4i5qEeqsQoWmHHfoag" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NNZPIC5rEeqsQoWmHHfoag" id="(0.33121019108280253,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_shxGcC5qEeqsQoWmHHfoag" id="(0.9679144385026738,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_zM798C5qEeqsQoWmHHfoag" type="4003" source="_WWzmIC4oEeqaLrxC39lI-g" target="_YRvloC4kEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zM8lAC5qEeqsQoWmHHfoag" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zM8lAS5qEeqsQoWmHHfoag" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_zM8lAi5qEeqsQoWmHHfoag" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zM8lAy5qEeqsQoWmHHfoag" x="-84" y="23"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zM798S5qEeqsQoWmHHfoag" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Item/offer"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zM798i5qEeqsQoWmHHfoag" points="[0, 0, -87, -60]$[87, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NNZ2MC5rEeqsQoWmHHfoag" id="(0.6624203821656051,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zM_oUC5qEeqsQoWmHHfoag" id="(0.4965986394557823,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_8pf_AC5qEeqsQoWmHHfoag" type="4003" source="_1YA4kC4hEeqaLrxC39lI-g" target="_d7fm8C4lEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8pgmEC5qEeqsQoWmHHfoag" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8pgmES5qEeqsQoWmHHfoag" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8pgmEi5qEeqsQoWmHHfoag" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8pgmEy5qEeqsQoWmHHfoag" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_8pf_AS5qEeqsQoWmHHfoag" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Mall/schedule"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8pf_Ai5qEeqsQoWmHHfoag" points="[0, 0, -176, -507]$[0, 446, -176, -61]$[176, 507, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NNf80C5rEeqsQoWmHHfoag" id="(0.15527950310559005,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NNgj4C5rEeqsQoWmHHfoag" id="(0.25,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_H80tYC5rEeqsQoWmHHfoag" type="4003" source="_Q5SfcC4mEeqaLrxC39lI-g" target="_d7fm8C4lEeqaLrxC39lI-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_H81UcC5rEeqsQoWmHHfoag" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H81UcS5rEeqsQoWmHHfoag" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H81Uci5rEeqsQoWmHHfoag" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H81Ucy5rEeqsQoWmHHfoag" x="-5" y="37"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_H80tYS5rEeqsQoWmHHfoag" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="myShoppingMall.ecore#//Employee/schedule"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H80tYi5rEeqsQoWmHHfoag" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NNeHoC5rEeqsQoWmHHfoag" id="(0.49740932642487046,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H84XwC5rEeqsQoWmHHfoag" id="(0.5,0.0)"/>
+  </edges>
+</notation:Diagram>

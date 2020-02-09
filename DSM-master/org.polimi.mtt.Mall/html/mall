@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>mall  </title>
+	</head>
+	<body>
+		<ul>
+			<li>
+			<p>Name: name</p>
+			<p>Location: 1</p>
+			<p>Opening Time: invalid - invalid</p>
+				<p>Brand: brand</p>
+			</li>
+		</ul>
+	</body>
+</html>
+
